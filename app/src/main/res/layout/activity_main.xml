@@ -17,24 +17,24 @@
         android:src="@drawable/logo" />
 
     <EditText
+        style="@style/EditTextStyle"
         app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="12dp"
         android:id="@+id/etLoginUsername"
         android:drawableStart="@drawable/vector_user"
-        android:drawablePadding="12dp"
         android:hint="@string/hint_user"
         android:layout_width="0dp"
         android:layout_height="48dp" />
 
     <EditText
+        style="@style/EditTextStyle"
         app:layout_constraintTop_toBottomOf="@+id/etLoginUsername"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="12dp"
         android:drawableStart="@drawable/vector_lock"
-        android:drawablePadding="12dp"
         android:hint="@string/hint_password"
         android:layout_width="match_parent"
         android:layout_height="48dp" />
