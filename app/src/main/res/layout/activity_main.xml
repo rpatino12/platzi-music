@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:theme="@style/Theme.PlatziMusic.Green"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
@@ -13,8 +12,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/ivLoginLogo"
-        android:layout_width="160dp"
-        android:layout_height="120dp"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/height_logo"
         android:src="@drawable/logo" />
 
     <EditText
@@ -22,7 +21,6 @@
         app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="12dp"
         android:id="@+id/etLoginUsername"
         android:drawableStart="@drawable/vector_user"
         android:hint="@string/hint_user"
@@ -34,7 +32,6 @@
         app:layout_constraintTop_toBottomOf="@+id/etLoginUsername"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="12dp"
         android:drawableStart="@drawable/vector_lock"
         android:hint="@string/hint_password"
         android:layout_width="match_parent"
@@ -44,10 +41,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="12dp"
+        android:layout_margin="@dimen/default_margin"
         android:text="@string/button_login"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="@dimen/height_button"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@color/primary_text"
         android:textStyle="bold" />
