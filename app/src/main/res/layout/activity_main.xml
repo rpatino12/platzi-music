@@ -7,19 +7,17 @@
     tools:context=".MainActivity"
     android:background="@android:color/white">
 
-    <ImageView
-        app:layout_constraintTop_toTopOf="parent"
+    <include
+        layout="@layout/include_logo"
+        android:id="@+id/inlcudeLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        android:id="@+id/ivLoginLogo"
-        android:layout_width="@dimen/width_logo"
-        android:layout_height="@dimen/height_logo"
-        android:src="@drawable/logo" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <EditText
         style="@style/EditTextStyle"
-        app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo"
+        app:layout_constraintTop_toBottomOf="@+id/inlcudeLogo"
         app:layout_constraintStart_toEndOf="@+id/profile_image"
         app:layout_constraintEnd_toEndOf="parent"
 
@@ -41,7 +39,7 @@
         android:layout_height="48dp" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo"
+        app:layout_constraintTop_toBottomOf="@+id/inlcudeLogo"
         app:layout_constraintStart_toStartOf="parent"
 
         android:id="@+id/profile_image"
